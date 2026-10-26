@@ -95,6 +95,11 @@ h1{
   @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 }
 .arc .plane{offset-rotate:auto}
+@media (min-width:901px){
+  header.hero .wrap{position:relative}
+  header.hero .arc{position:absolute;right:1.25rem;top:4.5rem;width:44%;max-width:480px;margin:0}
+  header.hero .hero-facts{margin-top:2.5rem}
+}
 
 .hero-facts{
   list-style:none;
@@ -138,7 +143,16 @@ h1{
   padding:1.1rem 1.25rem;
 }
 .note svg{width:30px;height:30px;flex:none;margin-top:.15rem}
-.note p{max-width:62ch}
+.note p{max-width:80ch}
+.milesline{
+  margin-top:.8rem;
+  padding:.65rem .8rem;
+  border-radius:10px;
+  border:1px dashed var(--blue);
+  color:var(--blue);
+  font-size:.95rem;
+  line-height:1.4;
+}
 .note strong{color:var(--blue);font-weight:600}
 .note small{display:block;color:var(--muted);font-size:.9rem;margin-top:.35rem}
 
@@ -279,7 +293,9 @@ footer a{color:var(--text)}
   header.hero{padding-top:1.5rem}
   .ladder a{grid-template-columns:1fr auto;gap:.5rem .8rem}
   .ladder .bar{grid-column:1 / -1;order:3}
-  .note{grid-template-columns:1fr;gap:.5rem}
+  .note{gap:.75rem;padding:1rem}
+  .note svg{width:24px;height:24px}
+  .cta-row{margin-top:1.25rem}
   .leg{grid-template-columns:1fr auto;}
   .leg dt{grid-column:1 / -1}
   .leg .day{grid-column:1}
@@ -327,7 +343,7 @@ footer a{color:var(--text)}
 
     <div class="cta-row">
       <a class="btn" href="#compare">See the four options</a>
-      <a class="btn ghost" href="#ladder">Compare by price</a>
+
     </div>
 
     <div class="note" role="note">
@@ -390,6 +406,7 @@ footer a{color:var(--text)}
               <div class="leg"><dt><b>Out</b>SFO to DTW</dt><dd class="day">Thu, Nov 12</dd><dd class="time">8:26am</dd></div>
               <div class="leg"><dt><b>Return</b>DTW to SFO</dt><dd class="day">Mon, Nov 16</dd><dd class="time">8:15am</dd></div>
             </dl>
+            <p class="milesline">Could be booked with our SkyBridge miles. Price shown is cash.</p>
           </div>
           <div class="stub">
             <div><span>Per person</span><div class="pp">$486</div></div>
@@ -442,6 +459,7 @@ footer a{color:var(--text)}
               <div class="leg"><dt><b>Out</b>SFO to DTW</dt><dd class="day">Fri, Nov 13</dd><dd class="time">8:10am</dd></div>
               <div class="leg"><dt><b>Return</b>DTW to SFO</dt><dd class="day">Mon, Nov 16</dd><dd class="time">8:15am</dd></div>
             </dl>
+            <p class="milesline">Could be booked with our SkyBridge miles. Price shown is cash.</p>
           </div>
           <div class="stub">
             <div><span>Per person</span><div class="pp">$529</div></div>
